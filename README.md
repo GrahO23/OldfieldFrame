@@ -17,7 +17,7 @@ It's designed to pull as little power as possible and run from the kindle experi
 
 Configure your forecast_io_dev key (https://developer.forecast.io/register)
  and location in config.json in the root of the source tree
- 
+
 <pre><code>
 {   "FORCAST_IO_API_KEY" : "MY_KEY",  
     "latitude" : "0.0",
@@ -31,7 +31,12 @@ $npm install
 
 $node app.js
 
-On the Kindle go to the browser and load the location of your node server
+You can disable the screen saver on kindle touch by going to the main search and typing
+
+;debugon
+~ds
+
+Then on the Kindle go to the browser and load the location of your node server
 
 http://mynodejsserver:3000
 
