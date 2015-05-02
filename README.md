@@ -4,8 +4,11 @@ Oldfield frame is a infromation station designed to be run on node.js. Can be ru
 
 The kindle will display London Underground tube delays, the current weather conditions and temperature as well as the next 5 days forecast with change of rain.
 
+![Alt text](img/frame.jpg)
+
 ### Version
 0.0.1
+
 ### Installation
 
 Configure your forecast_io_dev key (https://developer.forecast.io/register)
@@ -19,6 +22,7 @@ Configure your forecast_io_dev key (https://developer.forecast.io/register)
 Install node and npm
 
 $npm install
+
 $node app.js
 
 Enjoy.
