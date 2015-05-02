@@ -16,8 +16,9 @@ It's designed to pull as little power as possible and run from the kindle experi
 ### Installation
 
 Configure your forecast_io_dev key (https://developer.forecast.io/register)
- and location in config.json in the root of the source tree
+ and location a file called config.json in the root of the source tree.
 
+#### config.json
 <pre><code>
 {   "FORCAST_IO_API_KEY" : "MY_KEY",  
     "latitude" : "0.0",
