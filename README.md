@@ -1,6 +1,6 @@
 # Oldfield Frame
 
-Oldfield frame is a information and weather station designed to be run on node.js. It Can be run on a Rasberry Pi, Qnap NAS or web service such as heroku
+Oldfield frame is a tube delay and weather station designed to be run on node.js and kindle. It can be hosted on a Rasberry Pi, Qnap NAS or web service such as heroku.
 
 The frame fits a kindle touch perfectly and will display London Underground tube delays, the current weather conditions and temperature as well as the next 5 days forecast with change of rain.
 
