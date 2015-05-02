@@ -35,6 +35,9 @@ $node app.js
 You can disable the screen saver on kindle touch by going to the main search and typing
 
 ;debugon
+
+followed by
+
 ~ds
 
 Then on the Kindle go to the browser and load the location of your node server
