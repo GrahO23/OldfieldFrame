@@ -1,0 +1,151 @@
+
+body{
+	-webkit-transform: rotate(270deg);
+    -webkit-transform-origin: 350 350;
+    width : 700px;
+    height: 600px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+#tfl-outerdiv
+{
+    float : left;
+    left : -10%;
+    width    : 40%;
+    height   : 70%;
+    /*-webkit-transform: translate(-100px,-80px);*/
+}
+
+
+#list{
+    background-color: grey;
+    font-size:20px;
+    
+    /*padding-top: 100px;*/
+/*       text-align: center;*/
+}
+
+dt{
+    padding-left: 10px; 
+}
+
+dt:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#clockbox{
+    float : left;
+    background-color: #FFFFFF;
+    width: 60%;
+    height:70%;
+    /*z-index: 10;*/
+    font-size:150px;
+/*    border-width:5px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: solid;*/
+    }
+
+#clockbox #clock{
+    font-size:150px;
+    text-align: center;
+    line-height: 95%;
+}
+
+#clockbox #am{
+    font-size:30px;
+    text-align: center;
+}
+
+#clockbox #date{
+    font-size:40px;
+    text-align: center;
+}
+
+#clockbox #currently-container{
+    background-color: white;
+    width: 100%;
+    height: 40%;
+}
+
+#clockbox .day-label{
+    position: relative;
+    font-size: 30px;
+    top: 10px;
+    left: -90px;
+    display: block;
+}
+
+#currently-container #currently{
+    background-color: white;
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+}
+
+#currently-container #currently-temp{
+    position: absolute;
+    font-size:100px;
+    padding-top: 0px;
+    padding-left: 230px;
+}
+
+#currently-container #current-rain-chance{
+  position: initial;
+  font-size: 40px;
+  float: left;
+  bottom: 0;
+  padding-left: 65px;
+}
+
+#weather-container{
+    padding-left: 30px;
+    float : left;	
+    width : 100%;
+    height: 30%;
+    /*-webkit-transform: scale(2.0,2.0);*/
+    z-index: 100;
+}
+
+#weather-container .forecast-day{
+    padding-top: 20px;
+    float: left;
+    height: 100%;
+    width: 30%;
+}
+
+#weather-container .forecast-day .forecast-day-canvas{
+    width: 80%;
+}
+
+#weather-container .forecast-day .forecast-day-temp{
+   font-size:30px; 
+}
+
+
+#weather-container .day-label{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left;
+    display: none;
+}
+
+#last-updated {
+position: absolute;
+top: 400;
+left: 20;
+}
+
+
+
+
+
+

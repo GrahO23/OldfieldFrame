@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Oldfield info</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/skycons.js"></script>
+	</head>
+	<body>
+		<div id="tfl-outerdiv">
+			<div data-role="content" id="list">
+				<dl data-role="listview" data-count-theme="b" id="tubelines">
+				</dl>
+			</div>
+		</div>
+		<div id="clockbox">
+			<div id="clock"></div>
+			<div id="am"></div>
+			<div id="date"></div>
+			<div id="currently-container">
+				<canvas id="currently">
+				</canvas>
+				<div id="currently-temp">
+					??&deg;
+				</div>
+				<!-- <div class ="day-label">Now</div> -->
+				<span id="current-rain-chance">Rain Soon 0%</span>
+			</div>
+		</div>
+		<div id="weather-container">
+			<div class ="forecast-day" id="forecast-day-0">
+				<canvas class="forecast-day-canvas">
+				</canvas>
+				<div class="forecast-day-temp">
+					??&deg;
+				</div>
+				<div class ="day-label">???</div>
+			</div>
+			<div class ="forecast-day" id="forecast-day-1">
+				<canvas class="forecast-day-canvas">
+				</canvas>
+				<div class="forecast-day-temp">
+					??&deg;
+				</div>
+				<div class ="day-label">???</div>
+			</div>
+			<div class ="forecast-day" id="forecast-day-2">
+				<canvas class="forecast-day-canvas">
+				</canvas>
+				<div class="forecast-day-temp">
+					??&deg;
+				</div>
+				<div class ="day-label">???</div>
+			</div>
+		</div>
+		<div id='last-updated'>??? ??/??/??<div>
+	</body>
+</html>
