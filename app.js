@@ -4,14 +4,17 @@ var express = require('express'),
     unirest = require('unirest'),
     xml2js = require('xml2js'),
     parser = new xml2js.Parser(),
-    Forecast = require('forecast.io');
+    Forecast = require('forecast.io'),
+    fs = require('fs');
+
+var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 
 // The number of milliseconds in one day
 var oneDay = 86400000;
-var FORCAST_IO_API_KEY = 'xxxxxxxxx';
+var FORCAST_IO_API_KEY = config.FORCAST_IO_API_KEY;
 //https://api.forecast.io/forecast/APIKEY/LATITUDE,LONGITUDE
-var latitude = '0.0';
-var longitude = '0.0';
+var latitude =  config.latitude;
+var longitude = config.longitude;
 
 //http://darkskyapp.github.io/skycons/
 
