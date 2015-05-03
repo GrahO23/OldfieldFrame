@@ -5,9 +5,13 @@ var express = require('express'),
     xml2js = require('xml2js'),
     parser = new xml2js.Parser(),
     Forecast = require('forecast.io'),
+    Home = require('./home');
     fs = require('fs');
 
 var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+
+//Create home service pass in port to listen on
+var home = new Home(2912);
 
 // The number of milliseconds in one day
 var oneDay = 86400000;
@@ -30,7 +34,7 @@ var options = {
 // app.use(express.compress());
 
 // Serve up content from public directory
-app.use(express.static(__dirname + '/public', {
+app.use(express.static(__dirname + '/public/frame', {
     maxAge: oneDay
 }));
 
@@ -85,7 +89,8 @@ function getForecast(cb) {
     });
 }
 
+var port = process.env.PORT || 3000;
 
-app.listen(process.env.PORT || 3000);
+app.listen(port);
 
-console.log('starting frame...');
+console.log('starting frame listening on port :' + port);

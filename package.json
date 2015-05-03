@@ -10,7 +10,12 @@
     "express": "~4.9.x",
     "forecast.io": "0.0.9",
     "unirest": "^0.2.6",
-    "xml2js": "^0.4.3"
+    "xml2js": "^0.4.3",
+    "connect-flash": "0.1.x",
+    "ejs": ">= 0.0.0",
+    "ejs-locals": ">= 0.0.0",
+    "passport": ">= 0.0.0",
+    "passport-local": ">= 0.0.0"
   },
   "engines": {
     "node": "0.10.x"
